@@ -1,0 +1,18 @@
+$body-font-family-odibee-sans: 'Odibee Sans', Helvetica, Arial, sans-serif;
+$body-font-family-roboto: 'Roboto', Helvetica, Arial, sans-serif;
+
+@font-face {
+  font-family: 'Odibee Sans';
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url('../fonts/OdibeeSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
