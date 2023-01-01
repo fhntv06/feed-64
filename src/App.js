@@ -1,11 +1,16 @@
 import React from "react";
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
 
-function Init () {
+function App () {
   return (
-    <h1>
-      Title
-    </h1>
-  );
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  )
 }
 
-export default Init;
+export default App;
