@@ -1,0 +1,30 @@
+@import '../variable.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: $indent-20;
+}
+
+.container__content {
+  grid-column: 10/ span 3;
+
+  &::after {
+    content: 'About';
+    position: absolute;
+    top: 0;
+    left: -32px;
+    font-size: $typo-size-12;
+    text-transform: uppercase;
+  }
+}
+
+// надо добавить span со стилями для боковых записей
+// добавить экраны и собрать их для каждого элемента меню
