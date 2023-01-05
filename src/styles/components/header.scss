@@ -1,0 +1,71 @@
+@import '../variable.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu {
+  font-family: $body-font-family-odibee-sans;
+  font-size: $typo-size-24;
+  line-height: calc(1em + 6px);
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.menu__item {
+  &.active {
+    color: $color-red;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: $color-red;
+  }
+}
+
+.menu__list {
+  position: relative;
+
+  &::before {
+    content: 'GAMES';
+    position: absolute;
+    display: flex;
+    color: $color-gray-dark;
+    font-size: $typo-size-12;
+    line-height: calc(1em + 6px);
+    top: 10px;
+    left: calc($indent-32 * -1);
+    transform-origin: bottom left;
+    transform: rotateZ(-90deg);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -18px;
+    height: 100%;
+    width: 1px;
+    background-color: $color-gray-dark;
+  }
+}
+
+.menu__item,
+.menu__list {
+  margin-bottom: $indent-32;
+}
+
+.menu__item--concept {
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: 'concept';
+    color: $color-gray-dark;
+    font-size: $typo-size-10;
+    line-height: calc(1em + 6px);
+  }
+}
