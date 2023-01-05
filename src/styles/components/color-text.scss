@@ -1,0 +1,16 @@
+@import '../variable.scss';
+
+.text-color {
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.text-color--bggreen {
+  background-color: $color-green;
+}
+.text-color--blue {
+  color: $color-blue;
+}
+.text-color--bgblue {
+  background-color: $color-blue;
+}
