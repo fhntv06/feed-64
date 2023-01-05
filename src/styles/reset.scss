@@ -1,89 +1,108 @@
+@import './variable.scss';
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    color: inherit;
-    column-gap: inherit;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  column-gap: inherit;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: rgba(#fff, 0);
+  padding: $indent-64 $indent-52;
+  background-image: url('../images/edge.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: black;
+}
   
-  html, body {
-    min-height: 100%;
+ol, ul {
+  list-style: none;
+}
+
+input, a, textarea {
+  &:focus {
+    outline: none;
   }
-  
-  html {
-    height: 100%;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+
+  &:invalid {
+    box-shadow: none;
   }
-  
-  body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-tap-highlight-color: rgba(#fff, 0);
+
+  &::placeholder {
+    color: currentColor;
+    opacity: 1;
   }
-  
-  ol, ul {
-    list-style: none;
-  }
-  
-  input, a, textarea {
-    &:focus {
-      outline: none;
+
+  &:-webkit-autofill {
+    background-clip: text;
+    &:empty::first-line {
+      // font-size: 0;
     }
   }
-  
-  input, textarea {
-    -webkit-appearance: none;
-  
-    &:invalid {
-      box-shadow: none;
-    }
-  
-    &::placeholder {
-      color: currentColor;
-      opacity: 1;
-    }
-  
-    &:-webkit-autofill {
-      background-clip: text;
-      &:empty::first-line {
-        // font-size: 0;
-      }
-    }
+}
+
+button {
+  background-color: transparent;
+  outline-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
   }
-  
-  button {
-    background-color: transparent;
-    outline-color: transparent;
-    border: none;
-    cursor: pointer;
-  
-    &:focus {
-      outline: none;
-    }
-    // Remove dotted outline for buttons in FireFox:
-    &::-moz-focus-inner {
-      border: 0;
-    }
+  &::-moz-focus-inner {
+    border: 0;
   }
-  
-  strong {
-    font-weight: 700;
-  }
-  
-  mark {
-    background-color: transparent;
-  }
-  svg[role="img"] {
-    pointer-events: none;
-    overflow: visible;
-  }
-  img:not([src]):not([srcset]) {
-    visibility: hidden;
-  }
-  
-  [tabindex="-1"]:focus {
-    outline: 0;
-  }
-  
-  
+}
+
+strong {
+  font-weight: 700;
+}
+
+mark {
+  background-color: transparent;
+}
+
+svg[role="img"] {
+  pointer-events: none;
+  overflow: visible;
+}
+
+img:not([src]):not([srcset]) {
+  visibility: hidden;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+p {
+  font-size: $typo-size-24;
+  font-family: $body-font-family-roboto;
+  line-height: calc(1em + 6px);
+  color: $color-white;
+}
+
+a {
+  text-decoration: none;
+}
