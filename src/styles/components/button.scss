@@ -1,0 +1,20 @@
+@import '../variable.scss';
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 11/ span 2;
+  padding: $indent-32 $indent-16 $indent-24;
+  background-color: $color-red;
+  color: $color-white;
+  font-size: $typo-size-24;
+  font-family: $body-font-family-odibee-sans;
+  line-height: calc(1em + 6px);
+  text-transform: uppercase;
+}
+
+.icon {
+  width: 16px;
+  height: 10px;
+}
