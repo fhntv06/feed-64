@@ -1,0 +1,26 @@
+@import '../variable.scss';
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  height: max-content;
+}
+
+.logo__title {
+  font-family: $body-font-family-odibee-sans;
+  font-size: $typo-size-40;
+  line-height: calc(1em + 6px);
+  margin-right: $indent-32;
+}
+
+.logo__dectiprion {
+  font-family: $body-font-family-roboto;
+  font-size: $typo-size-16;
+  line-height: calc(1em + 6px);
+  max-width: 65px;
+}
+
+.logo__title,
+.logo__dectiprion {
+  color: $color-red;
+}
