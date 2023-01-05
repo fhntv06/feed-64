@@ -1,14 +1,15 @@
 import React from "react";
-import'./MenuHeader.module.scss';
 
 function MenuHeader() {
-  return(
-    <ul styleName='header__menu'>
-      <li styleName='menu__item'>ABOUT</li>
-      <li styleName='menu__item'>Gennady</li>
-      <li styleName='menu__item menu__item--concept'>Throworm</li>
-      <li styleName='menu__item'>Black Crow</li>
-      <li styleName='menu__item'>CONTACTS</li>
+  return (
+    <ul className='header__menu'>
+      <li className='menu__item active'>About</li>
+        <ul className='menu__list'>
+          <li className='menu__item'>Gennady</li>
+          <li className='menu__item'>Throworm</li>
+          <li className='menu__item menu__item--concept'>Black Crow</li>
+        </ul>
+      <li className='menu__item'>Contacts</li>
     </ul>
   );
 }
