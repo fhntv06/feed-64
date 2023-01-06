@@ -1,0 +1,8 @@
+@import './variable.scss';
+
+.grid-container {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: $indent-20;
+}

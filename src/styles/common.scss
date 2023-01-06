@@ -1,0 +1,65 @@
+@import './variable.scss';
+
+.arrow {
+  width: 11px;
+  height: 11px;
+}
+.icon {
+  width: 31px;
+  height: 31px;
+}
+.pre-text {
+  position: absolute;
+  top: calc($indent-20 * -1);
+  left: calc($indent-32 * -1);
+  display: flex;
+  font-family: $body-font-family-odibee-sans;
+  font-size: $typo-size-12;
+  line-height: calc(1em + 6px);
+  text-transform: uppercase;
+  transform-origin: bottom right;
+  transform: translateX(-100%) rotateZ(-90deg);
+  pointer-events: none;
+
+  &.pre-text--gray {
+    color: $color-gray-dark;
+  }
+  &.pre-text--red {
+    color: $color-red;
+  }
+}
+
+.offset--out-top {
+  margin-top: $indent-100;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &.bg-about {
+    background-image: url('../images/about-bg.png');
+  }
+  &.bg-gennady {
+    background-image: url('../images/gennady-bg.png');
+  }
+  &.bg-throworm {
+    background-image: url('../images/throworm-bg.png');
+  }
+  &.bg-contact {
+    background-image: url('../images/contacts-bg.png');
+  }
+}
+
+.text--small {
+  font-family: $body-font-family-roboto;
+  font-size: $typo-size-16;
+  line-height: calc(1em + 6px);
+}
+
+.text--default {
+  font-size: $typo-size-24;
+  font-family: $body-font-family-roboto;
+  line-height: calc(1em + 6px);
+}
