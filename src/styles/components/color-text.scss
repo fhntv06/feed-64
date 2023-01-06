@@ -1,6 +1,10 @@
 @import '../variable.scss';
 
 .text-color {
+  grid-column: span 5;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: $indent-16;
   text-transform: uppercase;
   color: $color-white;
 }
@@ -8,9 +12,10 @@
 .text-color--bggreen {
   background-color: $color-green;
 }
-.text-color--blue {
-  color: $color-blue;
-}
 .text-color--bgblue {
   background-color: $color-blue;
+}
+
+.text-color--blue {
+  color: $color-blue;
 }

@@ -1,30 +1,47 @@
 @import '../variable.scss';
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+.main__content {
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 $indent-52;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: $indent-20;
-}
+.content__text {
+  position: relative;
 
-.container__content {
-  grid-column: 10/ span 3;
+  &.content__text--btn {
+    grid-column: 11/span 2;
 
-  &::after {
-    content: 'About';
-    position: absolute;
-    top: 0;
-    left: -32px;
-    font-size: $typo-size-12;
-    text-transform: uppercase;
+    .button {
+      margin-top: $indent-24;
+    }
+  }
+  &.content__text--only {
+    grid-column: 10/span 3;
   }
 }
 
-// надо добавить span со стилями для боковых записей
-// добавить экраны и собрать их для каждого элемента меню
+.container__contacts {
+  position: relative;
+  align-items: center;
+
+  .button {
+    grid-column: span 2;
+  }
+  .icons {
+    grid-column: 4/ span 2;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container__contacts__info {
+    grid-column: 7/ span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #part-circle {
+    position: absolute;
+    left: 65%;
+  }
+}

@@ -4,17 +4,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  grid-column: 11/ span 2;
-  padding: $indent-32 $indent-16 $indent-24;
+  padding: $indent-20 $indent-32 $indent-16;
+  height: max-content;
   background-color: $color-red;
   color: $color-white;
   font-size: $typo-size-24;
   font-family: $body-font-family-odibee-sans;
   line-height: calc(1em + 6px);
   text-transform: uppercase;
-}
 
-.icon {
-  width: 16px;
-  height: 10px;
+  .arrow {
+    transform: rotateZ(-90deg);
+    transition: transform .5s;
+  }
+
+  &:hover {
+    .arrow {
+      transform: rotateZ(-90deg) translateY(10px);
+    }
+  }
 }

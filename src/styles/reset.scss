@@ -23,11 +23,6 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-tap-highlight-color: rgba(#fff, 0);
-  padding: $indent-64 $indent-52;
-  background-image: url('../images/edge.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   background-color: black;
 }
   
@@ -83,7 +78,7 @@ mark {
   background-color: transparent;
 }
 
-svg[role="img"] {
+svg {
   pointer-events: none;
   overflow: visible;
 }
@@ -97,9 +92,6 @@ img:not([src]):not([srcset]) {
 }
 
 p {
-  font-size: $typo-size-24;
-  font-family: $body-font-family-roboto;
-  line-height: calc(1em + 6px);
   color: $color-white;
 }
 
