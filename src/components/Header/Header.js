@@ -4,7 +4,7 @@ import MenuHeader from './MenuHeader/MenuHeader';
 
 function Header() {
   return(
-    <div className='header'>
+    <div className='header grid-container'>
       <LogoHeader />
       <MenuHeader />
     </div>
